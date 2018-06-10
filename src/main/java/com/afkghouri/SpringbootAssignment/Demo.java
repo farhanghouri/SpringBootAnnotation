@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class Demo {
 	@Autowired 
-	//@Qualifier("mytriangle")
-	Shape shape;
+	@Qualifier("xmlobj")
+	Storage storage;
 	   
-	   void draw(){
-		   shape.draw();
+	   void save(Object object){ 
+		   storage.save(object);
 	   }
 }
